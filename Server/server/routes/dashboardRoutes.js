@@ -4,12 +4,9 @@ const router = express.Router();
 const authMiddleware = require("../middleware/authMiddleware");
 
 const {
-    registerUser,
-    loginUser,
-} = require("../controllers/authController");
+    getDashboardStats
+} = require("../controllers/dashboardController");
 
-router.post("/register", registerUser);
-
-router.post("/login", loginUser);
+router.get("/", authMiddleware, getDashboardStats);
 
 module.exports = router;
