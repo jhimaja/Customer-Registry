@@ -10,7 +10,7 @@ import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import AddComplaint from "./pages/AddComplaint";
 import MyComplaints from "./pages/MyComplaints";
-import Profile from "./pages/Profile";
+import Profile from "./pages/profile";
 
 function App() {
   return (
