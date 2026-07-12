@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import api from "../services/api";
 
 function Profile() {
-
   const [profile, setProfile] = useState({
     user: {},
     total: 0,
@@ -10,26 +9,25 @@ function Profile() {
     resolved: 0,
   });
 
-  useEffect(() => {
-    fetchProfile();
-  }, []);
-
+  // Declare first
   const fetchProfile = async () => {
     try {
-
       const res = await api.get("/profile");
-
       setProfile(res.data);
-
     } catch (err) {
+      console.error(err);
       alert("Failed to load profile");
     }
   };
 
+  // Then use it
+  useEffect(() => {
+    fetchProfile();
+  }, []);
+
   return (
     <div className="hero">
       <div className="login-card">
-
         <h1>My Profile</h1>
 
         <h3>Name</h3>
@@ -40,15 +38,14 @@ function Profile() {
 
         <h3>Member Since</h3>
         <p>
-        {profile.user.createdAt
-        ? new Date(profile.user.createdAt).toLocaleDateString("en-IN", {
-        day: "numeric",
-        month: "long",
-        year: "numeric",
-        })
-        : "Loading..."}
+          {profile.user.createdAt
+            ? new Date(profile.user.createdAt).toLocaleDateString("en-IN", {
+                day: "numeric",
+                month: "long",
+                year: "numeric",
+              })
+            : "Loading..."}
         </p>
-        <hr />
 
         <hr />
 
@@ -60,7 +57,6 @@ function Profile() {
 
         <h3>Resolved Complaints</h3>
         <p>{profile.resolved}</p>
-
       </div>
     </div>
   );
