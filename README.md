@@ -1,4 +1,4 @@
-# Customer Care Registry
+# Customer Registry
 
 A full-stack MERN (MongoDB, Express.js, React.js, Node.js) web application developed to efficiently register, manage, and track customer complaints. The system provides a centralized platform for customers to submit issues, monitor complaint status, and manage their complaints through a secure authentication system.
 
