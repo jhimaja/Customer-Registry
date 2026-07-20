@@ -201,3 +201,37 @@ This project demonstrates practical implementation of:
 - State Management using React Hooks
 - Secure Password Hashing
 - Responsive User Interface Design
+
+# Customer Registry
+
+A full-stack Customer Registry web application built using the MERN Stack with JWT authentication and complaint management features.
+
+## 🔗 Live Demo
+
+**Frontend (Vercel):**
+https://customer-registry-three.vercel.app/
+
+**Backend API (Render):**
+https://customer-care-backend-77zv.onrender.com/
+
+## 📂 GitHub Repository
+
+https://github.com/jhimaja/Customer-Registry
+
+## ✨ Features
+
+- Secure User Registration & Login (JWT Authentication)
+- Add, View, Update, and Delete Complaints
+- User Profile Management
+- Responsive User Interface
+- MongoDB Atlas Database Integration
+
+## 🛠️ Tech Stack
+
+- Frontend: React.js, CSS
+- Backend: Node.js, Express.js
+- Database: MongoDB Atlas
+- Authentication: JWT
+- Deployment:
+  - Frontend: Vercel
+  - Backend: Render
